@@ -1,0 +1,125 @@
+@mixin blockConfig
+  padding: 1rem
+  font-size: 1.2em
+  color: #808080
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Poppins', sans-serif
+  font-weight: bold
+
+.container
+  display: grid
+  place-content: center
+  height: 40vh
+  background-image: url("../images/bg.png")
+  padding: 1rem
+
+header
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: #fff
+  font-size: 1rem
+  & h1
+    margin: 1rem
+    font-size: 1.2rem
+
+.search
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  & input
+    height: 2rem
+    margin: 0 auto
+    min-width: 15rem
+    border-radius: 8px
+    border: none
+    @include blockConfig
+  .find
+    position: absolute
+    right: 0rem
+    border-radius: 0 8px 8px 0
+    text-align: center
+    width: 2.5rem
+    height: 2.2rem
+    border: solid #000
+    background: #000
+    & a
+      color: #fff
+      height: 3rem
+      width: 3rem
+      text-decoration: none
+
+.block
+  position: absolute
+  top: 12rem
+  left: 2.5rem
+  right: 2.5rem
+  min-width: 80vw
+  background: #fff
+  margin: 2rem auto
+  border-radius: 8px
+  box-shadow: 1px 0 5px #ccc
+  @include blockConfig
+  display: flex
+  gap: 1rem
+  grow: 2
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+  & p
+    font-size: 0.6rem
+    color: #848484
+    text-align: center
+  & h3
+    margin-bottom: 1rem
+    text-align: center
+    color: #3f3f3f
+
+footer
+  display: block
+  align-content: bottom
+  position: relative
+
+  .attribution
+    position: absolute
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    margin: 0 auto
+    bottom: 0rem
+    left: 2.5rem
+    right: 2.5rem
+    color: #fff
+
+    a
+      text-decoration: none
+      color: #ccc
+
+  .attribution-2
+    position: absolute
+    display: flex
+    bottom: -1.9rem
+    color: #464646
+
+    a
+      text-decoration: none
+      color: #464646
+    & span
+      border: solid yellowgreen
+      padding: 0.1rem
+      margin-left: 0.2rem
+      transition: 300ms ease-in-out
+      &:hover
+        color: yellowgreen
+
+.map
+
+  min-height: 60vh
+  background: #464646

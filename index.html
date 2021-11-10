@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>IP Address Tracker</h1>
+        <div class="search">
+          <input type="text" />
+          <div class="find">
+            <button onclick="getIP()">></button>
+          </div>
+        </div>
+      </header>
+      <div class="block">
+        <div>
+          <p>IP ADDRESS</p>
+          <h3 id="ip-busca">- - -</h3>
+        </div>
+
+        <div>
+          <p>LOCATION</p>
+          <h3 id="location">- - -</h3>
+        </div>
+        <div>
+          <p>ISP</p>
+          <h3 id="isp">- - -</h3>
+        </div>
+      </div>
+    </div>
+    <div class="map"></div>
+
+    <footer>
+      <div class="attribution">
+        <div class="mentor">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >.
+        </div>
+
+        <div class="attribution-2">
+          Coded by
+          <a href="https://gothmate.github.io" target="_blank"
+            ><span>goth</span>mate</a
+          >.
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
