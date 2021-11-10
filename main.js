@@ -24,10 +24,9 @@ async function main(apiRequest) {
   let data = requestGET(apiRequest)
   let resposta = await JSON.parse(data)
 
-  console.log(resposta)
-
   location.innerText = `${resposta.location.country}-${resposta.location.region} ${resposta.location.timezone}`
   isp.innerText = resposta.isp
 
+  console.log(resposta)
   return resposta
 }
